@@ -1,6 +1,28 @@
 body{
-    background-color: cornflowerblue;
+    background: linear-gradient(
+        rgba(203, 35, 215, 0.5), /* Top color */
+        rgba(12, 24, 198, 0.595)  /* Bottom color */
+    );
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:100vh;
+}
+.bd{
+    border-radius: 10px;
+}
+input{
+    color: white;
+    border:2px solid black;
 }
 h1{
-    color:red;
+    letter-spacing: 2px;
 }
+.rd{
+    border:none;
+    width: 70px;          /* Set width */
+    height: 70px; 
+    border-radius: 50%;
+    background-color: blueviolet;
+    font-weight: bold;
+}
+

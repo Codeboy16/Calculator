@@ -8,7 +8,8 @@ function clearDis(){
 }
 function cal(){
     try{
-    userDis.value = eval(userDis.value);
+    let x = userDis.value = eval(userDis.value);
+    localStorage.setItem("data",x);
     }catch(error){
         userDis.value = "Invalid Input ";
     setTimeout(()=>{
@@ -16,4 +17,8 @@ function cal(){
     },900)    
     }
     
+}
+
+function history(){
+     userDis.value = localStorage.getItem("data");
 }
